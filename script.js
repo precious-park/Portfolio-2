@@ -1,3 +1,11 @@
+/*------sticky navbar----*/
+window.onscroll = () =>{
+  let header = document.querySelector(".header");
+  header.classList.toggle("sticky", window.scrollY > 100);
+  };
+
+
+
 // Theme toggle functionality
 const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
